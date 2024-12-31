@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>MonkeyPass</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="logo">MonkeyPass</div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>MonkeyPass</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, harum ea unde delectus repellat dignissimos tempora, corrupti necessitatibus, eum quibusdam consectetur. Aliquam deserunt nulla consequuntur?</p>
+
+
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+            <label for="website">Website</label>
+            <input type="text" name="website" id="website">
+            <br>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <button class="btn" type="submit">Submit</button>
+        </form>
+
+        <h2>Your Password <span id="alert">(Copied!)</span></h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="/js/script.js"></script>
+</html>
